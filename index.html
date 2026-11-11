@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contractor Proposal - 1135 Tobe Stalcup Rd | Holland Family Home Services</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+            color: #1e293b;
+        }
+        @media print {
+            body {
+                background-color: #ffffff;
+                color: #000000;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .print-border-0 {
+                border: 0 !important;
+            }
+            .print-shadow-none {
+                box-shadow: none !important;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+            .avoid-break {
+                page-break-inside: avoid;
+            }
+        }
+        .signature-canvas {
+            touch-action: none;
+            cursor: crosshair;
+        }
+    </style>
+</head>
+<body class="py-6 px-3 sm:px-6 md:py-10">
+
+    <!-- Action Bar (Sticky Top - Hidden in Print) -->
+    <div class="max-w-4xl mx-auto mb-6 flex flex-wrap items-center justify-between gap-4 bg-white p-4 rounded-xl shadow-md border border-slate-200 no-print">
+        <div class="flex items-center space-x-3">
+            <span class="inline-flex h-3 w-3 relative">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+            </span>
+            <span class="text-sm font-semibold text-slate-700">Interactive Proposal Ready for Review</span>
+        </div>
+        <div class="flex items-center gap-3">
+            <button onclick="window.print()" class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-900 text-white font-medium py-2 px-4 rounded-lg shadow transition-all active:scale-95 text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                </svg>
+                <span>Save as PDF / Print</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Proposal Document Container -->
+    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden border border-slate-200 print:border-0 print:shadow-none">
+
+        <!-- Header -->
+        <header class="bg-slate-800 text-white p-6 sm:p-10 print:bg-white print:text-slate-900 print:border-b-2 print:border-slate-800">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-6">
+                <div>
+                    <h1 class="text-3xl font-extrabold uppercase tracking-wider text-white print:text-slate-900">Holland Family</h1>
+                    <h2 class="text-xl font-light text-slate-300 print:text-slate-700">Home Services, Inc.</h2>
+                    <p class="mt-3 text-xs sm:text-sm text-slate-400 print:text-slate-600 leading-relaxed">
+                        70 Copperhead Trail<br>
+                        Murphy, NC 28906<br>
+                        Phone: 828-541-2442 | Email: TheHollandSeven@gmail.com
+                    </p>
+                </div>
+                <div class="text-left md:text-right w-full md:w-auto">
+                    <div class="inline-block bg-slate-700/60 border border-slate-600 px-4 py-1.5 rounded-full text-xs uppercase tracking-widest text-emerald-400 font-semibold mb-2 print:hidden">
+                        Inspection Punch-List Resolution
+                    </div>
+                    <h3 class="text-2xl sm:text-3xl font-bold uppercase tracking-tight">Proposal</h3>
+                    <p class="text-sm text-slate-400 print:text-slate-600 mt-1">Date: <span id="proposal-date">November 11, 2026</span></p>
+                    <p class="text-xs text-slate-400 print:text-slate-500">Inspection Ref: Report #20261109-1</p>
+                    
+                    <div class="mt-4 bg-slate-700/80 p-4 rounded-xl text-left border border-slate-600 print:bg-slate-100 print:border-slate-300 print:text-slate-900">
+                        <p class="text-xs uppercase text-slate-400 print:text-slate-600 font-semibold mb-1">Prepared For:</p>
+                        <p class="font-bold text-base text-white print:text-slate-900">Kevin Rourke</p>
+                        <p class="text-sm text-slate-200 print:text-slate-700">c/o Claire Janvary</p>
+                        <p class="text-sm text-slate-200 print:text-slate-700">1135 Tobe Stalcup Road</p>
+                        <p class="text-sm text-slate-200 print:text-slate-700">Murphy, NC 28906</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Project Overview -->
+        <section class="p-6 sm:p-8 border-b border-slate-200 bg-white">
+            <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Project Overview</h3>
+            <p class="text-slate-700 leading-relaxed text-sm sm:text-base">
+                This contract proposal outlines targeted exterior, crawl space, deck framing stabilization, fixture replacement, and interior repairs for the residence at <strong>1135 Tobe Stalcup Road</strong> based on buyer inspection findings (Report #20261109-1). All work performed with professional workmanship, quality materials, and complete site cleanup.
+            </p>
+            <div class="mt-4 bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-lg">
+                <p class="text-xs sm:text-sm text-blue-900">
+                    <strong>Customizable Scope:</strong> Each item below can be individually selected or excluded. The grand total and payment schedule will dynamically recalculate based on whichever combination of repairs you choose to approve.
+                </p>
+            </div>
+        </section>
+
+        <!-- 1. Selectable Repair Items -->
+        <section class="p-6 sm:p-8 border-b border-slate-200 bg-slate-50/70">
+            <div class="flex items-center justify-between mb-4">
+                <div>
+                    <h3 class="text-base sm:text-lg font-bold text-slate-800 uppercase tracking-wide">1. Individual Repair Scope Items</h3>
+                    <p class="text-xs text-slate-500">Check or uncheck any item to include or exclude it from the project</p>
+                </div>
+                <span class="text-xs bg-slate-200 text-slate-700 px-3 py-1 rounded-full font-semibold print:border print:border-slate-400">Selectable</span>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm border-collapse">
+                    <thead>
+                        <tr class="border-b border-slate-300 text-slate-600 uppercase text-xs tracking-wider">
+                            <th class="py-3 px-2 text-center w-12 font-semibold">Select</th>
+                            <th class="py-3 px-2 font-semibold">Ref & Description</th>
+                            <th class="py-3 px-2 text-center font-semibold w-24">Category</th>
+                            <th class="py-3 px-2 text-right font-semibold w-28">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200 text-slate-700">
+                        <!-- Item 1: Crawl Space Vapor Barrier -->
+                        <tr class="hover:bg-slate-100/60 transition-colors">
+                            <td class="py-4 px-2 text-center align-top">
+                                <input type="checkbox" id="check-item-crawl" checked onchange="recalculateTotals()" class="h-5 w-5 text-blue-600 rounded border-slate-300 focus:ring-blue-500 cursor-pointer">
+                            </td>
+                            <td class="py-4 px-2 align-top">
+                                <label for="check-item-crawl" class="cursor-pointer">
+                                    <div class="font-bold text-slate-900">Crawl Space Vapor Barrier Ground Cover</div>
+                                    <div class="text-xs text-blue-700 font-semibold mb-1">Inspection Ref: Section 9.5 (Item 1) & Section 3.6 - Crawl Space Ground</div>
+                                    <p class="text-xs sm:text-sm text-slate-600 leading-normal">
+                                        Supply and install 6 mil black vapor barrier over all the bare earth sections of the crawl space overlapping existing seams and new seams by 12 inches. Install anchors with ground landscape pins.
+                                    </p>
+                                </label>
+                            </td>
+                            <td class="py-4 px-2 align-top text-center text-xs text-slate-500">Crawl Space</td>
+                            <td class="py-4 px-2 align-top text-right font-semibold text-slate-900" id="row-price-crawl">$485.00</td>
+                        </tr>
+
+                        <!-- Item 2: Kitchen GFCI -->
+                        <tr class="hover:bg-slate-100/60 transition-colors">
+                            <td class="py-4 px-2 text-center align-top">
+                                <input type="checkbox" id="check-item-gfci" checked onchange="recalculateTotals()" class="h-5 w-5 text-blue-600 rounded border-slate-300 focus:ring-blue-500 cursor-pointer">
+                            </td>
+                            <td class="py-4 px-2 align-top">
+                                <label for="check-item-gfci" class="cursor-pointer">
+                                    <div class="font-bold text-slate-900">Kitchen Countertop GFCI Receptacle Replacement</div>
+                                    <div class="text-xs text-blue-700 font-semibold mb-1">Inspection Ref: Section 6.5 (Item 1) - Kitchen Countertop by Sink</div>
+                                    <p class="text-xs sm:text-sm text-slate-600 leading-normal">
+                                        Turn off breaker, disconnect and replace non-functioning kitchen countertop outlet with a new 15A/20A tamper-resistant GFCI receptacle device (like-for-like fixture swap), and verify test/reset operation.
+                                    </p>
+                                </label>
+                            </td>
+                            <td class="py-4 px-2 align-top text-center text-xs text-slate-500">Fixture Swap</td>
+                            <td class="py-4 px-2 align-top text-right font-semibold text-slate-900" id="row-price-gfci">$165.00</td>
+                        </tr>
+
+                        <!-- Item 3: Elevated Deck Sway Bracing -->
+                        <tr class="hover:bg-slate-100/60 transition-colors">
+                            <td class="py-4 px-2 text-center align-top">
+                                <input type="checkbox" id="check-item-deck" checked onchange="recalculateTotals()" class="h-5 w-5 text-blue-600 rounded border-slate-300 focus:ring-blue-500 cursor-pointer">
+                            </td>
+                            <td class="py-4 px-2 align-top">
+                                <label for="check-item-deck" class="cursor-pointer">
+                                    <div class="font-bold text-slate-900">Elevated Deck Diagonal Sway Knee Bracing</div>
+                                    <div class="text-xs text-blue-700 font-semibold mb-1">Inspection Ref: Section 2.6 Item 3 - Deck Diagonal Bracing</div>
+                                    <p class="text-xs sm:text-sm text-slate-600 leading-normal">
+                                        Install pressure-treated 4x4 diagonal knee braces across elevated deck posts exceeding 4 feet in height, fastened with structural screws.
+                                    </p>
+                                </label>
+                            </td>
+                            <td class="py-4 px-2 align-top text-center text-xs text-slate-500">Carpentry</td>
+                            <td class="py-4 px-2 align-top text-right font-semibold text-slate-900" id="row-price-deck">$450.00</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="border-t-2 border-slate-300 bg-slate-100/70">
+                            <td colspan="3" class="py-3 px-2 text-right font-bold text-slate-800 uppercase text-xs">Selected Inspection Items Subtotal:</td>
+                            <td class="py-3 px-2 text-right font-bold text-slate-900 text-base" id="subtotal-items-display">$1,100.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <!-- 2. Select Vinyl Siding Repair Option -->
+        <section class="p-6 sm:p-8 border-b border-slate-200 bg-white">
+            <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2 mb-2">
+                <div>
+                    <h3 class="text-base sm:text-lg font-bold text-slate-800 uppercase tracking-wide">2. Select Vinyl Siding Repair Method</h3>
+                    <p class="text-xs text-slate-500">Addressing damaged cladding & loose eave piece (Inspection Ref: Section 2.2 Items 1–5)</p>
+                </div>
+                <span class="text-xs bg-amber-100 text-amber-900 border border-amber-300 px-2.5 py-1 rounded-full font-semibold w-fit">
+                    Required Selection
+                </span>
+            </div>
+            <p class="text-slate-600 mb-4 text-xs sm:text-sm leading-relaxed">
+                Secure the loose section of vinyl siding beneath the eave and address puncture holes on the north wall, west wall, and detached garage. Choose between patch repair or full panel replacement:
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                <!-- Siding Option A: Patches -->
+                <div id="card-siding-a" class="border-2 border-blue-600 bg-blue-50/70 rounded-xl p-4 cursor-pointer transition-all flex flex-col justify-between" onclick="selectSidingOption('a')">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <div class="font-bold text-sm sm:text-base text-slate-900">Option A: Repair Patches</div>
+                                <span class="text-[11px] text-blue-700 font-semibold uppercase tracking-wider">Spot Patch Repair</span>
+                            </div>
+                            <div class="h-5 w-5 rounded-full border-2 border-blue-600 flex items-center justify-center bg-white" id="radio-siding-a">
+                                <div class="h-2.5 w-2.5 rounded-full bg-blue-600"></div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-600 mb-3 leading-relaxed">
+                            Mechanically secure loose eave section. Apply custom vinyl repair patches over puncture holes.
+                        </p>
+                        <div class="bg-amber-50 border-l-2 border-amber-500 p-2 text-[10px] text-amber-900 mb-2">
+                            <strong>Disclaimer:</strong> Patch work is not guaranteed. No guarantee of exact color match.
+                        </div>
+                    </div>
+                    <div class="border-t border-slate-200 pt-2 flex justify-between items-baseline mt-2">
+                        <span class="text-[11px] text-slate-500 uppercase font-medium">Cost:</span>
+                        <span class="text-lg font-bold text-slate-900">$340.00</span>
+                    </div>
+                </div>
+
+                <!-- Siding Option B: Full Panel Replacement -->
+                <div id="card-siding-b" class="border-2 border-slate-200 bg-white rounded-xl p-4 cursor-pointer hover:border-slate-300 transition-all flex flex-col justify-between" onclick="selectSidingOption('b')">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <div class="font-bold text-sm sm:text-base text-slate-900">Option B: Full Panels</div>
+                                <span class="text-[11px] text-emerald-700 font-semibold uppercase tracking-wider">Complete Runs</span>
+                            </div>
+                            <div class="h-5 w-5 rounded-full border-2 border-slate-300 flex items-center justify-center bg-white" id="radio-siding-b">
+                                <div class="h-2.5 w-2.5 rounded-full bg-blue-600 hidden"></div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-600 mb-3 leading-relaxed">
+                            Secure loose eave section. Unzip and replace damaged panels with full-length new vinyl siding runs.
+                        </p>
+                        <div class="bg-amber-50 border-l-2 border-amber-500 p-2 text-[10px] text-amber-900 mb-2">
+                            <strong>Disclaimer:</strong> No guarantee of exact color or profile match with aged siding.
+                        </div>
+                    </div>
+                    <div class="border-t border-slate-200 pt-2 flex justify-between items-baseline mt-2">
+                        <span class="text-[11px] text-slate-500 uppercase font-medium">Cost:</span>
+                        <span class="text-lg font-bold text-slate-900">$680.00</span>
+                    </div>
+                </div>
+
+                <!-- Siding Option None: Decline -->
+                <div id="card-siding-none" class="border-2 border-slate-200 bg-white rounded-xl p-4 cursor-pointer hover:border-slate-300 transition-all flex flex-col justify-between" onclick="selectSidingOption('none')">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <div class="font-bold text-sm sm:text-base text-slate-900">Decline Siding Repair</div>
+                                <span class="text-[11px] text-slate-500 font-semibold uppercase tracking-wider">Exclude from Scope</span>
+                            </div>
+                            <div class="h-5 w-5 rounded-full border-2 border-slate-300 flex items-center justify-center bg-white" id="radio-siding-none">
+                                <div class="h-2.5 w-2.5 rounded-full bg-blue-600 hidden"></div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-500 mb-3 leading-relaxed">
+                            Do not perform vinyl siding repairs or eave fastening. Leaves exterior siding conditions as noted in report.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-200 pt-2 flex justify-between items-baseline mt-2">
+                        <span class="text-[11px] text-slate-500 uppercase font-medium">Cost:</span>
+                        <span class="text-lg font-bold text-slate-500">$0.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Select Living Room Wall Finish System -->
+        <section class="p-6 sm:p-8 border-b border-slate-200 bg-white">
+            <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2 mb-2">
+                <div>
+                    <h3 class="text-base sm:text-lg font-bold text-slate-800 uppercase tracking-wide">3. Select Living Room Wall Finish System</h3>
+                    <p class="text-xs text-slate-500">Addressing west living room wall repair (Inspection Ref: Section 8.3 Item 1)</p>
+                </div>
+                <span class="text-xs bg-amber-100 text-amber-900 border border-amber-300 px-2.5 py-1 rounded-full font-semibold w-fit">
+                    Required Selection
+                </span>
+            </div>
+            <p class="text-slate-600 mb-6 text-xs sm:text-sm leading-relaxed">
+                To address the existing drywall repair on the living room west wall, choose between the standard localized spot repair, the comprehensive full-wall skim & finish, or decline drywall work:
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Option 1: Spot Patch -->
+                <div id="card-wall-a" class="border-2 border-blue-600 bg-blue-50/70 rounded-xl p-4 cursor-pointer transition-all flex flex-col justify-between" onclick="selectWallOption('a')">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <div class="font-bold text-sm sm:text-base text-slate-900">Option 1: Spot Patch & Feather</div>
+                                <span class="text-[11px] text-blue-700 font-semibold uppercase tracking-wider">Fast Turnaround (1 Day)</span>
+                            </div>
+                            <div class="h-5 w-5 rounded-full border-2 border-blue-600 flex items-center justify-center bg-white" id="radio-wall-a">
+                                <div class="h-2.5 w-2.5 rounded-full bg-blue-600"></div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-600 mb-3 leading-relaxed">
+                            Localized cutout and mud feathering, texture blend spray, spot prime, and localized wall coat.
+                        </p>
+                        <ul class="text-[11px] text-slate-500 space-y-1 list-disc list-inside mb-2">
+                            <li>1-day turnaround</li>
+                            <li><em>Note:</em> Texture transitions may remain slightly visible in glancing light.</li>
+                        </ul>
+                    </div>
+                    <div class="border-t border-slate-200 pt-2 flex justify-between items-baseline mt-2">
+                        <span class="text-[11px] text-slate-500 uppercase font-medium">Cost:</span>
+                        <span class="text-lg font-bold text-slate-900">$385.00</span>
+                    </div>
+                </div>
+
+                <!-- Option 2: Full Wall Skim -->
+                <div id="card-wall-b" class="border-2 border-slate-200 bg-white rounded-xl p-4 cursor-pointer hover:border-slate-300 transition-all flex flex-col justify-between" onclick="selectWallOption('b')">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <div class="font-bold text-sm sm:text-base text-slate-900">Option 2: Full-Wall Skim & Paint</div>
+                                <span class="text-[11px] text-emerald-700 font-semibold uppercase tracking-wider">Seamless Finish (2 Days)</span>
+                            </div>
+                            <div class="h-5 w-5 rounded-full border-2 border-slate-300 flex items-center justify-center bg-white" id="radio-wall-b">
+                                <div class="h-2.5 w-2.5 rounded-full bg-blue-600 hidden"></div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-600 mb-3 leading-relaxed">
+                            Mechanical scrape, full tight skim corner-to-corner, uniform retexture, primer, and 2 full coats.
+                        </p>
+                        <ul class="text-[11px] text-slate-500 space-y-1 list-disc list-inside mb-2">
+                            <li><strong>100% Invisible:</strong> No patch line or flash</li>
+                            <li>Requires 2 days for drying</li>
+                        </ul>
+                    </div>
+                    <div class="border-t border-slate-200 pt-2 flex justify-between items-baseline mt-2">
+                        <span class="text-[11px] text-slate-500 uppercase font-medium">Cost:</span>
+                        <span class="text-lg font-bold text-slate-900">$890.00</span>
+                    </div>
+                </div>
+
+                <!-- Option None: Decline -->
+                <div id="card-wall-none" class="border-2 border-slate-200 bg-white rounded-xl p-4 cursor-pointer hover:border-slate-300 transition-all flex flex-col justify-between" onclick="selectWallOption('none')">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <div class="font-bold text-sm sm:text-base text-slate-900">Decline Drywall Repair</div>
+                                <span class="text-[11px] text-slate-500 font-semibold uppercase tracking-wider">Exclude from Scope</span>
+                            </div>
+                            <div class="h-5 w-5 rounded-full border-2 border-slate-300 flex items-center justify-center bg-white" id="radio-wall-none">
+                                <div class="h-2.5 w-2.5 rounded-full bg-blue-600 hidden"></div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-slate-500 mb-3 leading-relaxed">
+                            Do not perform drywall patching, skimming, retexturing, or painting in living room.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-200 pt-2 flex justify-between items-baseline mt-2">
+                        <span class="text-[11px] text-slate-500 uppercase font-medium">Cost:</span>
+                        <span class="text-lg font-bold text-slate-500">$0.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Cost Summary & Payment Schedule -->
+        <section class="p-6 sm:p-8 border-b border-slate-200 bg-white avoid-break">
+            <h3 class="text-base sm:text-lg font-bold text-slate-800 uppercase tracking-wide mb-4">4. Investment Summary & Payment Schedule</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Left: Cost Breakdown -->
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 shadow-sm space-y-3">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 border-b border-slate-200 pb-2">Cost Center Breakdown</h4>
+                    
+                    <div class="flex justify-between text-sm text-slate-600">
+                        <span>Selected Repair Items (Crawl, GFCI, Deck):</span>
+                        <span class="font-medium text-slate-800" id="summary-core-cost">$1,100.00</span>
+                    </div>
+                    <div class="flex justify-between text-sm text-slate-600">
+                        <span id="label-siding-cost">Selected Vinyl Siding Scope:</span>
+                        <span class="font-medium text-slate-800" id="summary-siding-cost">$340.00</span>
+                    </div>
+                    <div class="flex justify-between text-sm text-slate-600">
+                        <span id="label-wall-cost">Selected Living Room Wall Scope:</span>
+                        <span class="font-medium text-slate-800" id="summary-wall-cost">$385.00</span>
+                    </div>
+                    <div class="flex justify-between text-sm text-slate-600 border-t border-dashed border-slate-200 pt-2">
+                        <span>Direct Materials & Supplies Subtotal:</span>
+                        <span class="font-medium text-slate-800" id="summary-materials-subtotal">$645.00</span>
+                    </div>
+                    <div class="flex justify-between text-sm text-slate-600">
+                        <span>Labor & Installation Subtotal:</span>
+                        <span class="font-medium text-slate-800" id="summary-labor-subtotal">$1,180.00</span>
+                    </div>
+                    
+                    <!-- Credit card toggle -->
+                    <div class="pt-2 border-t border-slate-200">
+                        <label class="flex items-center justify-between text-xs sm:text-sm text-slate-600 cursor-pointer select-none">
+                            <span class="flex items-center gap-2">
+                                <input type="checkbox" id="cc-fee-checkbox" onchange="toggleCcFee()" class="rounded text-blue-600 focus:ring-blue-500 border-slate-300 h-4 w-4">
+                                <span>Credit Card Payment Convenience (4%)</span>
+                            </span>
+                            <span class="font-semibold text-slate-700" id="summary-cc-fee">$0.00</span>
+                        </label>
+                    </div>
+
+                    <div class="pt-3 border-t-2 border-slate-800 flex justify-between items-baseline">
+                        <span class="font-bold text-slate-900 text-base">Grand Total Investment:</span>
+                        <span class="text-2xl font-extrabold text-slate-900" id="grand-total-display">$1,825.00</span>
+                    </div>
+                    <div class="text-[11px] text-slate-500 italic text-right" id="selected-summary-desc">Selected Items: Crawl Space, GFCI, Deck Bracing, Siding Patches, Wall Spot Patch</div>
+                </div>
+
+                <!-- Right: 2-Stage Payment Schedule -->
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500 border-b border-slate-200 pb-2 mb-3">Payment Schedule (2-Stage)</h4>
+                        <ul class="space-y-4 text-xs sm:text-sm">
+                            <li class="flex justify-between items-start">
+                                <div>
+                                    <span class="font-bold text-slate-800 block text-sm">1. Material & Mobilization Deposit (30%)</span>
+                                    <span class="text-slate-500 text-xs">Due upon contract acceptance & project scheduling</span>
+                                </div>
+                                <span class="font-bold text-blue-600 text-base" id="pay-deposit">$547.50</span>
+                            </li>
+                            <li class="flex justify-between items-start">
+                                <div>
+                                    <span class="font-bold text-slate-800 block text-sm">2. Completion Balance (70%)</span>
+                                    <span class="text-slate-500 text-xs">Due upon final completion of contracted services</span>
+                                </div>
+                                <span class="font-bold text-slate-900 text-base" id="pay-completion">$1,277.50</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-200 text-xs text-slate-500 italic">
+                        *Checks payable to <strong>Holland Family Home Services, Inc.</strong> Zelle and credit card options available.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Project Appendix & Conditions -->
+        <section class="p-6 sm:p-8 border-b border-slate-200 bg-slate-50/50">
+            <h3 class="text-base sm:text-lg font-bold text-slate-800 uppercase tracking-wide mb-4">5. Project Specifications & Appendix</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm text-slate-600">
+                <!-- Timeline & Staging -->
+                <div>
+                    <h4 class="font-bold text-slate-800 uppercase text-xs tracking-wider mb-2">Estimated Execution Schedule</h4>
+                    <div class="space-y-2 border-l-2 border-blue-500 pl-3">
+                        <div>
+                            <span class="font-semibold text-slate-900">Day 1: Mobilization, Core Repairs & Prep</span>
+                            <p class="text-slate-500 text-xs">Install crawl space 6-mil black poly vapor barrier with ground pins. Replace & test kitchen countertop GFCI. Install 4x4 diagonal knee braces with structural screws. Execute selected siding repair (patches or panel replacement). Drywall cutback, mudding/skim coat application.</p>
+                        </div>
+                        <div>
+                            <span class="font-semibold text-slate-900">Day 2 (If Option 2 Selected for Wall): Finishing & Painting</span>
+                            <p class="text-slate-500 text-xs">Full wall sanding, bonding primer coat, and 2 full coats of paint (allowing proper dry time between stages). Final cleanup and inspection walkthrough.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terms & Scope Clarifications -->
+                <div>
+                    <h4 class="font-bold text-slate-800 uppercase text-xs tracking-wider mb-2">Terms & Exclusions</h4>
+                    <ul class="list-disc list-inside space-y-1 text-slate-600 text-xs leading-relaxed">
+                        <li><strong>Deck Bracing:</strong> 4x4 treated diagonal knee braces installed on elevated posts to mitigate lateral deck sway as noted in inspection report Section 2.6.</li>
+                        <li><strong>Siding Disclaimers:</strong> Patch work is not guaranteed. No guarantee of exact color match or exact panel profile match due to sun fade, weathering, age, and manufacturer dye lots.</li>
+                        <li><strong>Underlying Moisture:</strong> Drywall scope includes sealing and finishing the repair area. It assumes roof pipe boots or gutters (noted in report) have stopped introducing active water.</li>
+                        <li><strong>Color Matching:</strong> Wall paint will be matched to existing living room shade as accurately as possible; slight sheen differences may occur between aged and fresh coatings.</li>
+                        <li><strong>Hidden Structural Framing:</strong> Repairs assume existing framing is sound; rotted framing concealed behind siding or drywall is billed transparently at time & materials.</li>
+                        <li><strong>Quote Validity:</strong> Pricing is locked for 30 calendar days from date of issue.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Digital Signature & Authorization -->
+        <section class="p-6 sm:p-8 bg-white avoid-break">
+            <h3 class="text-base sm:text-lg font-bold text-slate-800 uppercase tracking-wide mb-2">6. Acceptance & Authorization</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mb-6">
+                By signing below, the client authorizes Holland Family Home Services, Inc. to perform the selected scope of work according to the pricing and terms outlined above.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-end">
+                <!-- Client Signature Pad -->
+                <div>
+                    <div class="flex justify-between items-center mb-1.5">
+                        <label class="text-xs font-bold uppercase tracking-wider text-slate-700">Client Digital Signature:</label>
+                        <button type="button" onclick="clearSignature()" class="text-xs text-rose-600 hover:text-rose-800 font-semibold no-print focus:outline-none">
+                            Clear Signature
+                        </button>
+                    </div>
+                    <div class="border-2 border-dashed border-slate-300 rounded-xl bg-slate-50 p-1">
+                        <canvas id="signature-pad" class="signature-canvas w-full h-28 rounded-lg bg-slate-50" width="400" height="112"></canvas>
+                    </div>
+                    <div class="text-[11px] text-slate-400 mt-1 no-print">Sign using mouse, stylus, or touchscreen finger.</div>
+                </div>
+
+                <!-- Client Printed Name & Date -->
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Printed Name:</label>
+                        <input type="text" value="Kevin Rourke (c/o Claire Janvary)" class="w-full text-sm bg-slate-50 border border-slate-300 rounded-lg p-2.5 font-medium text-slate-800 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Date Signed:</label>
+                        <input type="text" id="input-sign-date" value="November 11, 2026" class="w-full text-sm bg-slate-50 border border-slate-300 rounded-lg p-2.5 font-medium text-slate-800 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Company Rep Sign-off -->
+            <div class="mt-8 pt-6 border-t border-slate-200 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-xs text-slate-500">
+                <div>
+                    <span class="font-bold text-slate-800">Company:</span> Holland Family Home Services, Inc.
+                </div>
+                <div>
+                    <span class="font-bold text-slate-800">Coverage:</span> Fully Insured Business Liability Coverage
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Instructions Banner (Bottom - Hidden in Print) -->
+    <div class="max-w-4xl mx-auto mt-6 text-center text-xs text-slate-500 no-print">
+        Tip: To export as a clean PDF for Kevin or Claire, click <strong>Save as PDF / Print</strong> in the top bar and choose "Save as PDF" as the destination.
+    </div>
+
+    <!-- Master Application Logic -->
+    <script>
+        // ==========================================
+        // PRICING CONFIGURATION
+        // ==========================================
+        // INDIVIDUAL REPAIR ITEMS (All Checkable)
+        const REPAIR_ITEMS = {
+            crawl: { id: 'check-item-crawl', name: 'Crawl Space Vapor Barrier', total: 485.00, mat: 275.00, lab: 210.00 },
+            gfci:  { id: 'check-item-gfci',  name: 'Kitchen GFCI Receptacle',    total: 165.00, mat: 75.00,  lab: 90.00 },
+            deck:  { id: 'check-item-deck',  name: '4x4 Deck Sway Bracing',      total: 450.00, mat: 150.00, lab: 300.00 }
+        };
+
+        // SIDING OPTIONS (Including Decline)
+        const SIDING_OPTIONS = {
+            a:    { name: 'Option A (Patches)',      label: 'Selected Vinyl Siding (Option A - Patches):', total: 340.00, mat: 60.00,  lab: 280.00 },
+            b:    { name: 'Option B (Full Panels)',  label: 'Selected Vinyl Siding (Option B - Full Panels):', total: 680.00, mat: 200.00, lab: 480.00 },
+            none: { name: 'Excluded',                label: 'Vinyl Siding Repair (Declined / Excluded):', total: 0.00,   mat: 0.00,   lab: 0.00 }
+        };
+
+        // DRYWALL OPTIONS (Including Decline)
+        const WALL_OPTIONS = {
+            a:    { name: 'Option 1 (Spot Patch)',       label: 'Selected Living Room Wall (Option 1 - Spot Patch):', total: 385.00, mat: 85.00,  lab: 300.00 },
+            b:    { name: 'Option 2 (Full Skim & Paint)', label: 'Selected Living Room Wall (Option 2 - Full Skim):', total: 890.00, mat: 245.00, lab: 645.00 },
+            none: { name: 'Excluded',                     label: 'Living Room Drywall (Declined / Excluded):', total: 0.00,   mat: 0.00,   lab: 0.00 }
+        };
+
+        const CC_FEE_RATE = 0.04;
+
+        // Application State
+        let selectedSiding = 'a';
+        let selectedWall = 'a';
+        let isCcFeeActive = false;
+
+        function formatUSD(num) {
+            return '$' + num.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        }
+
+        function selectSidingOption(opt) {
+            selectedSiding = opt;
+            const keys = ['a', 'b', 'none'];
+            keys.forEach(k => {
+                const card = document.getElementById('card-siding-' + k);
+                const radio = document.getElementById('radio-siding-' + k);
+                if (k === opt) {
+                    card.className = 'border-2 border-blue-600 bg-blue-50/70 rounded-xl p-4 cursor-pointer transition-all flex flex-col justify-between';
+                    radio.querySelector('div').classList.remove('hidden');
+                    radio.className = 'h-5 w-5 rounded-full border-2 border-blue-600 flex items-center justify-center bg-white';
+                } else {
+                    card.className = 'border-2 border-slate-200 bg-white rounded-xl p-4 cursor-pointer hover:border-slate-300 transition-all flex flex-col justify-between';
+                    radio.querySelector('div').classList.add('hidden');
+                    radio.className = 'h-5 w-5 rounded-full border-2 border-slate-300 flex items-center justify-center bg-white';
+                }
+            });
+            document.getElementById('label-siding-cost').innerText = SIDING_OPTIONS[opt].label;
+            recalculateTotals();
+        }
+
+        function selectWallOption(opt) {
+            selectedWall = opt;
+            const keys = ['a', 'b', 'none'];
+            keys.forEach(k => {
+                const card = document.getElementById('card-wall-' + k);
+                const radio = document.getElementById('radio-wall-' + k);
+                if (k === opt) {
+                    card.className = 'border-2 border-blue-600 bg-blue-50/70 rounded-xl p-4 cursor-pointer transition-all flex flex-col justify-between';
+                    radio.querySelector('div').classList.remove('hidden');
+                    radio.className = 'h-5 w-5 rounded-full border-2 border-blue-600 flex items-center justify-center bg-white';
+                } else {
+                    card.className = 'border-2 border-slate-200 bg-white rounded-xl p-4 cursor-pointer hover:border-slate-300 transition-all flex flex-col justify-between';
+                    radio.querySelector('div').classList.add('hidden');
+                    radio.className = 'h-5 w-5 rounded-full border-2 border-slate-300 flex items-center justify-center bg-white';
+                }
+            });
+            document.getElementById('label-wall-cost').innerText = WALL_OPTIONS[opt].label;
+            recalculateTotals();
+        }
+
+        function toggleCcFee() {
+            const cb = document.getElementById('cc-fee-checkbox');
+            isCcFeeActive = cb.checked;
+            recalculateTotals();
+        }
+
+        function recalculateTotals() {
+            let activeCoreTotal = 0;
+            let activeCoreMat = 0;
+            let activeCoreLab = 0;
+            const selectedItemNames = [];
+
+            // Evaluate checkable items
+            Object.keys(REPAIR_ITEMS).forEach(k => {
+                const item = REPAIR_ITEMS[k];
+                const cb = document.getElementById(item.id);
+                const priceCell = document.getElementById('row-price-' + k);
+                if (cb && cb.checked) {
+                    activeCoreTotal += item.total;
+                    activeCoreMat += item.mat;
+                    activeCoreLab += item.lab;
+                    selectedItemNames.push(item.name);
+                    if (priceCell) priceCell.classList.remove('line-through', 'text-slate-400');
+                } else if (priceCell) {
+                    priceCell.classList.add('line-through', 'text-slate-400');
+                }
+            });
+
+            document.getElementById('subtotal-items-display').innerText = formatUSD(activeCoreTotal);
+            document.getElementById('summary-core-cost').innerText = formatUSD(activeCoreTotal);
+
+            const currentSiding = SIDING_OPTIONS[selectedSiding];
+            const currentWall = WALL_OPTIONS[selectedWall];
+            
+            if (selectedSiding !== 'none') selectedItemNames.push(currentSiding.name);
+            if (selectedWall !== 'none') selectedItemNames.push(currentWall.name);
+
+            const currentMaterials = activeCoreMat + currentSiding.mat + currentWall.mat;
+            const currentLabor = activeCoreLab + currentSiding.lab + currentWall.lab;
+            const subtotal = activeCoreTotal + currentSiding.total + currentWall.total;
+
+            const ccFee = isCcFeeActive ? (subtotal * CC_FEE_RATE) : 0.00;
+            const grandTotal = subtotal + ccFee;
+
+            // 2-Stage Payment Schedule: 30% Deposit, 70% Completion Balance
+            const deposit = grandTotal * 0.30;
+            const completeLabor = grandTotal * 0.70;
+
+            // Update UI Displays
+            document.getElementById('summary-siding-cost').innerText = formatUSD(currentSiding.total);
+            document.getElementById('summary-wall-cost').innerText = formatUSD(currentWall.total);
+
+            document.getElementById('summary-materials-subtotal').innerText = formatUSD(currentMaterials);
+            document.getElementById('summary-labor-subtotal').innerText = formatUSD(currentLabor);
+            document.getElementById('summary-cc-fee').innerText = formatUSD(ccFee);
+            document.getElementById('grand-total-display').innerText = formatUSD(grandTotal);
+
+            document.getElementById('pay-deposit').innerText = formatUSD(deposit);
+            document.getElementById('pay-completion').innerText = formatUSD(completeLabor);
+
+            if (selectedItemNames.length === 0) {
+                document.getElementById('selected-summary-desc').innerText = 'No items currently selected.';
+            } else {
+                document.getElementById('selected-summary-desc').innerText = 'Selected: ' + selectedItemNames.join(', ');
+            }
+        }
+
+        // ==========================================
+        // SIGNATURE CANVAS LOGIC
+        // ==========================================
+        const canvas = document.getElementById('signature-pad');
+        const ctx = canvas.getContext('2d');
+        let isDrawing = false;
+
+        function resizeCanvas() {
+            const rect = canvas.getBoundingClientRect();
+            const data = canvas.toDataURL();
+            canvas.width = rect.width;
+            canvas.height = rect.height;
+            ctx.strokeStyle = '#0f172a';
+            ctx.lineWidth = 2.2;
+            ctx.lineCap = 'round';
+            ctx.lineJoin = 'round';
+            const img = new Image();
+            img.src = data;
+            img.onload = () => ctx.drawImage(img, 0, 0);
+        }
+
+        function getCoords(e) {
+            const rect = canvas.getBoundingClientRect();
+            const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+            const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+            return {
+                x: clientX - rect.left,
+                y: clientY - rect.top
+            };
+        }
+
+        function startDraw(e) {
+            isDrawing = true;
+            const { x, y } = getCoords(e);
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            e.preventDefault();
+        }
+
+        function draw(e) {
+            if (!isDrawing) return;
+            const { x, y } = getCoords(e);
+            ctx.lineTo(x, y);
+            ctx.stroke();
+            e.preventDefault();
+        }
+
+        function stopDraw() {
+            isDrawing = false;
+        }
+
+        function clearSignature() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        canvas.addEventListener('mousedown', startDraw);
+        canvas.addEventListener('mousemove', draw);
+        window.addEventListener('mouseup', stopDraw);
+
+        canvas.addEventListener('touchstart', startDraw, { passive: false });
+        canvas.addEventListener('touchmove', draw, { passive: false });
+        window.addEventListener('touchend', stopDraw);
+
+        window.onload = function() {
+            resizeCanvas();
+            recalculateTotals();
+
+            const now = new Date();
+            const dateStr = now.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+            if (dateStr) {
+                document.getElementById('proposal-date').innerText = dateStr;
+                document.getElementById('input-sign-date').value = dateStr;
+            }
+        };
+
+        window.addEventListener('resize', () => {
+            resizeCanvas();
+        });
+    </script>
+</body>
+</html>
